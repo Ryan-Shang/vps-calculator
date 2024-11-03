@@ -18,8 +18,8 @@ export default function Layout() {
     }
 
     const containerStyle = {
-        // backgroundImage: `url(${CustomizedData.bg})`
-        backgroundImage: 'url(https://fastly.picsum.photos/id/518/1920/1080.jpg?hmac=yW2qvv7jVIo8fbpROaX6kzcR0ZBwogUgl0xsDRJWabA)'
+        backgroundImage: `url(${CustomizedData.bg})`
+        // backgroundImage: 'url(https://fastly.picsum.photos/id/518/1920/1080.jpg?hmac=yW2qvv7jVIo8fbpROaX6kzcR0ZBwogUgl0xsDRJWabA)'
     };
 
     return (
