@@ -8,4 +8,5 @@ export default defineConfig({
     { path: "/*", redirect: "/404" }
   ],
   npmClient: 'npm',
+  history: { type: 'hash' }
 });
