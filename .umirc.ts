@@ -10,7 +10,7 @@ export default defineConfig({
   npmClient: 'npm',
   history: { type: 'hash' },
   favicons: [
-    // 此时将指向 `/favicon.png` ，确保你的项目含有 `public/favicon.png`
-    '/favicon.png'
+    // 此时将指向 `/favicon.icp` ，确保你的项目含有 `public/favicon.ico`
+    '/favicon.ico'
   ]
 });
