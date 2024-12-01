@@ -8,5 +8,9 @@ export default defineConfig({
     { path: "/*", redirect: "/404" }
   ],
   npmClient: 'npm',
-  history: { type: 'hash' }
+  history: { type: 'hash' },
+  favicons: [
+    // 此时将指向 `/favicon.png` ，确保你的项目含有 `public/favicon.png`
+    '/favicon.png'
+  ]
 });
