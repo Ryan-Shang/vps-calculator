@@ -38,7 +38,7 @@ function CalculatorPage() {
             const res =  await formInstance.validateFields();
             const { renewDate, buyDate, renewal, duration, rate, amount } = res;
             const daysDiff = dayjs(renewDate).diff(dayjs(buyDate), 'day') + 1;
-            const oneYearPrice = duration / 12 * renewal * rate;
+            const oneYearPrice = 12 / duration * renewal * rate;
             const tempRemainValue = daysDiff / 365 * oneYearPrice;
             setRemainValue(Math.round(tempRemainValue * 100) / 100);
             setOverflowPrice(Math.round((amount - tempRemainValue) * 100) / 100);

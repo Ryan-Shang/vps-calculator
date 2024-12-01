@@ -4,6 +4,9 @@ import styles from './index.less';
 import stores from '@/store/index';
 import { Provider } from 'mobx-react'
 import CustomizedData from '../../CustomizedData.json';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/locale/zh_CN';
+import 'dayjs/locale/zh-cn';
 
 export default function Layout() {
 
@@ -11,9 +14,9 @@ export default function Layout() {
 
     if (location.pathname === '/404') {
         return (
-            <>
+            <ConfigProvider locale={zhCN}>
                 <Outlet />
-            </>
+            </ConfigProvider>
         )
     }
 
@@ -23,10 +26,12 @@ export default function Layout() {
     };
 
     return (
-        <div className={styles.layout} style={containerStyle} >
-            <Provider {...stores}>
-                <Outlet />
-            </Provider>
-        </div>
+        <ConfigProvider locale={zhCN}>
+            <div className={styles.layout} style={containerStyle} >
+                <Provider {...stores}>
+                    <Outlet />
+                </Provider>
+            </div>
+        </ConfigProvider>
     );
 }
