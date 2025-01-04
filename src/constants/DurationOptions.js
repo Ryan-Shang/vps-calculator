@@ -1,4 +1,4 @@
-export const durationOptions = [
+export const DurationOptions = [
     { label: '月付', value: 1 },
     { label: '季付', value: 3 },
     { label: '半年付', value: 6 },
@@ -8,4 +8,4 @@ export const durationOptions = [
     { label: '五年付', value: 60 }
 ]
 
-export default durationOptions;
+export default DurationOptions;

@@ -1,27 +1,22 @@
 {
-  "version": "1.0",
+  "name": "vps-calculator",
   "private": true,
-  "author": "Ryan-Shang <Ryan.Shang@outlook.com>",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "umi dev",
-    "build": "umi build",
-    "postinstall": "umi setup",
-    "setup": "umi setup",
-    "start": "npm run dev"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@ant-design/pro-components": "^2.8.1",
-    "antd": "^5.21.6",
-    "axios": "^1.7.7",
     "dayjs": "^1.11.13",
-    "mobx": "^6.13.5",
-    "mobx-react": "^9.1.1",
-    "umi": "^4.3.28"
+    "tdesign-mobile-vue": "^1.7.0",
+    "tdesign-vue-next": "^1.10.6",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "@umijs/plugins": "^4.3.28",
-    "typescript": "^5.0.3"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "less": "^4.2.1",
+    "vite": "^6.0.5"
   }
 }

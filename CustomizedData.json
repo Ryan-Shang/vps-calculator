@@ -1,5 +1,6 @@
 {
-    "bg": "https://unsplash.it/1920/1080?random",
+    "bg-pc": "https://unsplash.it/1920/1080?random",
+    "bg-m": "https://unsplash.it/1920/1080?random",
     "tips": [
         "牢记祖训：一鸡一号一邮箱",
         "大额交易走中介",
