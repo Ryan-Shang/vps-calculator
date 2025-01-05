@@ -14,10 +14,15 @@ npm run build
 ### 定制化
 
 修改根目录下的`CustomizedData.json`文件
-`bg-pc`
-`bg-m`: 
+
+`bg-pc`: PC端背景
+
+`bg-m`: 移动端背景
+
 `Title`: 标题
+
 `tips`: 提示文案
+
 `tabTitle`: 浏览器标签名称
 
 ```javascript
