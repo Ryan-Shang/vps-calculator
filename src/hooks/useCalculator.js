@@ -47,9 +47,7 @@ export const useCalculator = () => {
             const res = await formCompoRef.value.validate();
             if (res === true) {
                 const { renewDate, buyDate, renewal, duration, rate, amount } = formData;
-                console.log(renewDate, buyDate, renewal, duration, rate, amount);
                 const daysDiff = dayjs(renewDate).diff(dayjs(buyDate), 'day') + 1;
-                console.log(daysDiff);
                 const oneYearPrice = 12 / duration * renewal * rate;
                 const tempRemainValue = daysDiff / 365 * oneYearPrice;
                 resultState.remainValue = Math.round(tempRemainValue * 100) / 100;

@@ -1,5 +1,35 @@
-# Vue 3 + Vite
+### 开发
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```bash
+npm install
+npm run dev
+```
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### 构建
+
+```bash
+npm run build
+```
+
+### 定制化
+
+修改根目录下的`CustomizedData.json`文件
+`bg-pc`
+`bg-m`: 
+`Title`: 标题
+`tips`: 提示文案
+`tabTitle`: 浏览器标签名称
+
+```javascript
+{
+    "bg-pc": "https://unsplash.it/1920/1080?random",
+    "bg-m": "https://unsplash.it/1920/1080?random",
+    "title": "VPS剩余价值计算器",
+    "tips": [
+        "牢记祖训：一鸡一号一邮箱",
+        "大额交易走中介",
+        "适度娱乐，回归生活"
+    ],
+    "tabTitle": "VPS剩余价值计算器"
+}
+```
